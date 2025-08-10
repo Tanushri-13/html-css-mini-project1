@@ -1,0 +1,79 @@
+main {
+    margin-top: 100px;
+    display: flex;
+    color: #c89b6f;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-bottom: 100px; /* prevents overlap with footer */
+}
+
+table {
+    margin: 20px auto;
+}
+table th{
+    font-size: 40px;
+    padding: 50px;
+}
+table td{
+    font-size: x-large;
+    padding-left: 50px;
+    padding-bottom:50px ;
+    border-bottom:1px dotted #b57f30 ;
+}
+img{
+    width:40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.contact {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px #b2744c;
+    background-color: #3c1f14;
+    color: #c89b6f;
+}
+
+.contact img {
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+}
+
+#first, #second, #third, #fourth {
+    margin: 0 auto;
+    text-align: center;
+    width: 45%;
+    opacity: 0;
+    animation: slideIn 1s ease forwards;
+}
+
+#first {
+    transform: translate(-200%, -200%);
+    animation-delay: 0s;
+}
+
+#second {
+    transform: translate(200%, -200%);
+    animation-delay: 0s;
+}
+
+#third {
+    transform: translate(-200%, 200%);
+    animation-delay: 0s;
+}
+
+#fourth {
+    transform: translate(200%, 200%);
+    animation-delay: 0s;
+}
+@keyframes slideIn {
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
